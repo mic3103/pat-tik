@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    
+}
+
+header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 100;
+}
+
+#asus{
+    transition: 700ms;
+}
+
+nav{
+    right: 0;
+    font-family: "Montserrat", sans-serif;
+    margin: 20px;
+    align-items: center;
+    display: flex;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    width: 100px;
+    padding: 10px;
+}
+
+.duar {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-image: url(./asset/background-en.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    animation: fade-in 3s ease forwards;
+}
+
+
+
+.text-duar {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: auto;
+}
+
+.text-duar p{
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    animation: ajg 3s ease forwards;
+}
+
+.tombol {
+    border-style: double;
+    border-color: #67D3F3;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 500ms;
+    border-radius: 5px;
+}
+
+.tombol:hover {
+    background-color: #67D3F3;
+}
+
+.tombol p {
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.kenapa-coba{
+    background-image: linear-gradient(
+        to bottom,
+        #0177D9 0%,
+        #0177D9 50%,
+        #FFFFFF 50%,
+        #FFFFFF 100%
+    );
+
+    text-align: center;
+
+    
+        justify-content: center;
+}
+
+.isi-kpc{
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+
+
+
+/*DUNIA ANIMASIKUUUU*/
+
+@keyframes exotic {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes nias {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes tombol {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in{
+    0% {
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes ajg {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.int {
+    opacity: 0; /* Mulai dari opacity 0 */
+    animation: exotic 3s ease forwards; /* Animasi fade in selama 1 detik */
+    margin-top: 60px;
+}
+
+.sea {
+    opacity: 0;
+    animation: nias 3s ease forwards;
+}
+
+.tombol{
+    opacity: 0;
+    animation: tombol 3s ease forwards;
+}
+
+
+
+
+
+.residen {
+    position: relative;
+    color: white;
+    margin: 20px;
+}
+
+.residen img{
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.residen h3{
+    position: absolute;
+    left: 16px;
+    top: 8px;
+    font-size: 25px;
+}
+
+.residen p{
+    position: absolute;
+    left: 16px;
+    top: 40px;
+}
+
+.keunggulan-isi{
+    display: flex;
+    text-align: center;
+    max-width: fit-content;
+}
+
+.keunggulan {
+    width: 100vw;
+    display: flex; /* Tambahkan display flex */
+    justify-content: center; /* Tambahkan justify-content center */
+    
+}
+
+.keunggulann{
+    background-image: url(./asset/bgbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.keunggulann h1, h5{
+    color: white;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+}
+
+.residen {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+  
+.residen.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+
+.yaolopak{
+    overflow: hidden;
+}
+
+.yaolopak img{
+    filter: brightness(0.8);
+    transition: 500ms;
+}
+
+.yaolopak img:hover{
+    transform: scale(1.1);
+    filter: brightness(1);
+}
+
+
+
+.tombolbli{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    transition: 500ms;
+}
+
+.tombolbli:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#value h1{
+    transition: transform 0.5s ease-out;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    color: white;
+}
